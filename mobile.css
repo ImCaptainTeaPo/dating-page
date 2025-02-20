@@ -1,0 +1,67 @@
+@media (min-width: 375px) and (max-width: 767px) {
+    /* Центрирование контейнера */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Шапка */
+    .header {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo_mob {
+        display: block;
+        font-size: 1.2rem;
+        padding-left: 15px;
+        font-weight: bold;
+        color: #f00;
+    }
+
+    .header__social-links {
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+    /* Основная информация профиля */
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .profile__photo {
+        width: 200px;
+    }
+
+    .profile__name {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .profile__description {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Галерея изображений */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .gallery__item {
+        border-radius: 8px;
+    }
+
+    .gallery__photo {
+        border-radius: 8px;
+    }
+}
